@@ -21,3 +21,8 @@ void Engine::Render(sf::Drawable& drawable)
     window.Draw(drawable);
     window.EndDraw();
 }
+
+Window& Engine::GetWindow()
+{
+    return window;
+}

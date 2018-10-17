@@ -7,8 +7,11 @@ int main()
     sf::CircleShape shape(100.f);
     shape.setFillColor(sf::Color::Green);
 
-    engine.Render(shape);
-    engine.Update();
+    while (engine.GetWindow().IsOpen() )
+    {
+        engine.Update();
+        engine.Render(shape);
+    }
 
     return 0;
 }

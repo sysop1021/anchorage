@@ -12,6 +12,8 @@ class Engine
         void Update();
         void Render(sf::Drawable& drawable);
 
+        Window& GetWindow();
+
     private:
         Window window;
 

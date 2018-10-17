@@ -15,9 +15,13 @@ class Window
 
         void Update();
 
+        bool IsOpen();
+
     private:
         sf::RenderWindow window;
         sf::Event event;
+
+        bool open;
 
 };
 

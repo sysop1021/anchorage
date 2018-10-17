@@ -3,6 +3,7 @@
 Window::Window()
 {
      window.create(sf::VideoMode(600, 800), "Project Anchorage", sf::Style::Default);
+     open = true;
 }
 
 Window::~Window()
@@ -27,14 +28,17 @@ void Window::EndDraw()
 
 void Window::Update()
 {
-    while (window.isOpen())
+    while (window.pollEvent(event))
     {
-        while (window.pollEvent(event))
+        if (event.type == sf::Event::Closed)
         {
-            if (event.type == sf::Event::Closed)
-            {
-                window.close();
-            }
+            open = false;
+            window.close();
         }
     }
+}
+
+bool Window::IsOpen()
+{
+    return open;
 }
