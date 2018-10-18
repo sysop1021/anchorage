@@ -11,6 +11,7 @@ int main()
     {
         engine.Update();
         engine.Render(shape);
+        engine.HandleInput(shape);
     }
 
     return 0;

@@ -14,6 +14,8 @@ class Engine
 
         Window& GetWindow();
 
+        void HandleInput(sf::Transformable& transformable);
+
     private:
         Window window;
 
