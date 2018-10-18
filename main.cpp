@@ -4,14 +4,24 @@ int main()
 {
     Engine engine;
 
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    sf::Texture bgTex, p1Tex;
+
+    bgTex.loadFromFile("assets/bg.png");
+    p1Tex.loadFromFile("assets/p1.png");
+
+    sf::Sprite bg, p1;
+
+    bg.setTexture(bgTex);
+    p1.setTexture(p1Tex);
+
+
 
     while (engine.GetWindow().IsOpen() )
     {
         engine.Update();
-        engine.Render(shape);
-        engine.HandleInput(shape);
+        engine.Render(bg);
+        engine.Render(p1);
+        engine.HandleInput(p1);
     }
 
     return 0;
