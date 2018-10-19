@@ -4,15 +4,15 @@ int main()
 {
     Engine engine;
 
-    sf::Texture /* bgTex,*/ p1Tex;
+    //sf::Texture /* bgTex,*/ p1Tex;
 
-   // bgTex.loadFromFile("assets/bg.png");
-    p1Tex.loadFromFile("assets/p1.png");
+    //bgTex.loadFromFile("assets/bg.png");
+    //p1Tex.loadFromFile("assets/p1.png");
 
-    sf::Sprite /*bg,*/ p1;
+    //sf::Sprite /*bg,*/ p1;
 
-   // bg.setTexture(bgTex);
-    p1.setTexture(p1Tex);
+    //bg.setTexture(bgTex);
+    //p1.setTexture(p1Tex);
 
 
 
