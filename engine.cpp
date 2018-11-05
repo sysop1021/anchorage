@@ -17,9 +17,9 @@ void Engine::Update()
 
 void Engine::Render(sf::Drawable& drawable)
 {
-    window.PreDraw();
+    //window.PreDraw();
     window.Draw(drawable);
-    window.EndDraw();
+    //window.EndDraw();
 }
 
 Window& Engine::GetWindow()
