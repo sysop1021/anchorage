@@ -19,10 +19,10 @@ int main()
     while (engine.GetWindow().IsOpen() )
     {
         engine.Update();
-        engine.GetWindow().PreDraw();
+        engine.GetWindow().PreDraw(); // ugly - move this
         engine.Render(bg);
         engine.Render(p1);
-        engine.GetWindow().EndDraw();
+        engine.GetWindow().EndDraw(); // ugly - move this
         engine.HandleInput(p1);
     }
 
