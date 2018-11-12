@@ -28,10 +28,10 @@ int main()
     while (engine.GetWindow().IsOpen() )
     {
         engine.Update();
-        engine.GetWindow().PreDraw(); // ugly - move this
+        engine.GetWindow().PreDraw();
         engine.Render(bg);
         engine.Render(p1);
-        engine.GetWindow().EndDraw(); // ugly - move this
+        engine.GetWindow().EndDraw();
         engine.HandleInput(p1);
     }
 
