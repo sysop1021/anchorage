@@ -1,26 +1,24 @@
 #include "engine.hpp"
-#include "player.hpp"
 
 int main()
 {
     Engine engine;
-    Player p1;
 
     /*
     *  REFACTOR ALL THIS NONSENSE
     */
-    sf::Texture bgTex;
+    sf::Texture bgTex, p1Tex;
 
     bgTex.loadFromFile("assets/bg.png");
-    //p1Tex.loadFromFile("assets/p1.png");
+    p1Tex.loadFromFile("assets/p1.png");
 
-    sf::Sprite bg;
+    sf::Sprite bg, p1;
 
     bg.setTexture(bgTex);
-    //p1.setTexture(p1Tex);
+    p1.setTexture(p1Tex);
 
-    //p1.setOrigin(p1Tex.getSize().x / 2, p1Tex.getSize().y / 2);
-    //p1.setPosition(300, 800 * 0.8f);
+    p1.setOrigin(p1Tex.getSize().x / 2, p1Tex.getSize().y / 2);
+    p1.setPosition(300, 800 * 0.8f);
     /************************************/
 
 

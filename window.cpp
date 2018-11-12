@@ -3,14 +3,12 @@
 Window::Window()
 {
      window.create(sf::VideoMode(600, 800), "Project Anchorage", sf::Style::Default);
-     // window.setFramerateLimit(60); // still flickers
-     // window.setVerticalSyncEnabled(true); // still flickers
      open = true;
 }
 
 Window::~Window()
 {
-    // window.close();
+
 }
 
 void Window::PreDraw()
